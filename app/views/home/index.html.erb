@@ -1,0 +1,4 @@
+<%= form_tag(models_path, method: "get") do %>
+  <%= select_tag "webmotors_make_id", options_from_collection_for_select(@makes, "webmotors_id", "name", "0") %>
+  <%= submit_tag "Buscar Modelos", name: nil %>
+<% end %>
